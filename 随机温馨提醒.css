@@ -1,0 +1,46 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+    overflow: hidden;
+    /* 重要：防止滚动条 */
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.message-box {
+    position: fixed;
+    /* 固定定位，让它们停留在各自的位置 */
+    background: #fef6e4;
+    border: 2px solid #f3d2c1;
+    border-radius: 15px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 180px;
+    max-width: 250px;
+    text-align: center;
+    cursor: pointer;
+    /* 添加淡入动画 */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.message-text {
+    margin: 0;
+    color: #6d6875;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
