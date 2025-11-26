@@ -74,6 +74,7 @@ function getRandomColor() {
     return `hsl(${h}, ${s}%, ${l}%)`;
 }
 // 每隔一段时间创建一个新对话框
-setInterval(createMessage, 50); // 3秒一个，你可以调整
+setInterval(createMessage, 300); // 3秒一个，你可以调整
 // 页面加载后立即创建第一个
+
 window.onload = createMessage;
